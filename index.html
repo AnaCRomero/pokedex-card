@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Pokedex</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1 class="title">Mini Pokédex</h1>
+
+      <section class="card" id="card">
+        <div class="header">
+          <h2 id="pokemon-name">Nombre</h2>
+          <span id="pokemon-id">#000</span>
+        </div>
+
+        <p id="pokemon-type">Tipo</p>
+
+        <img id="pokemon-image" src="" alt="Pokemon" />
+
+        <div class="stats">
+          <p>❤️ HP: <span id="pokemon-hp">0</span></p>
+          <p>⚔️ Ataque: <span id="pokemon-attack">0</span></p>
+          <p>🛡️ Defensa: <span id="pokemon-defense">0</span></p>
+        </div>
+
+        <div class="buttons">
+          <button id="prev-btn" onclick="prevPokemon()">prev</button>
+          <button id="next-btn" onclick="nextPokemon()">next</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
